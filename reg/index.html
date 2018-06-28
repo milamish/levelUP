@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--a simple user interface that allows a user to post a comment-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head> <h2>militech services</h2></head>
+	<body>
+	<div class="span8">					
+		<div class="topnav">
+			<a class="active" href="#home">Home</a>	
+			<div class='reg'>							
+			<a href="register.html">Register</a>
+			</div>
+			
+		</div>
+	</div>
+	<!-------this section allows a user to post a comment, they ae surposed to also submit their username---->
+	<section>
+		<div class='comments'>
+			<form action='' method= 'get' id='userform'>
+				<p>you can comment here! give us your thoughts, what do you think about this program?<p>
+				<div class='comment'>
+					<label class='control-label'>Username</label>
+						<div class='controls'>
+							<input type='text' placeholder='Enter your username' id='Username' required>
+						</div>
+				</div>
+							<textarea rows='10' cols='50'>textarea</textarea>
+				<div class="clearfix">
+					<button type=" comment" class="signupbtn">submit comment</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	</body>
+</html>
