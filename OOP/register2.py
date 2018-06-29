@@ -1,13 +1,15 @@
-from andela import Users
-from login2 import user_login
+from andela import User
+from login2 import User_login
 class user_register:
     pass
-def NoRecords(self):
+def No_user_records(self):
     self.username = input("enter your username: ")
  
     if self.username in users:
         print("\nLogin name already exist!\n")
     else:
-        self.emailadress=input("emailadress")
+        self.emailadress=input("enter emailadress")
         self.password = input("Enter password: ")
         Users[Username] =Password
+        db.update({username:password})
+        print('successful registration')

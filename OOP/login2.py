@@ -1,4 +1,4 @@
-from andela import User_login
+from andela import User
 from register2 import user_register
 class User_login:
     def UserExists(self):
@@ -6,7 +6,7 @@ class User_login:
         self.username = input("Enter Username here: ")
         self.password = input("Enter password here: ")
  
-        if username in Users and Users[username] == password:
+        if self.username in Users and Users[self.username] ==self.password:
             print("\n succesfuly logged in \n")
         else:
             print("\n UserName or password is invalid! please try again\n")

@@ -9,6 +9,6 @@ class User:
         if status == "yes":
             UserExists()
         elif status == "not":
-            NoRecords()
+            No_user_records()
         
 
