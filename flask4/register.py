@@ -7,6 +7,7 @@ from test_register import test_password
 db={}
 app=Flask(__name__)
 app.secret_key="mish"
+comment=[]
 
 
 @app.route("/")
@@ -35,7 +36,7 @@ def register():
         username=request.form['username']
         password=request.form['password']
         repeatpassword=request.form['repeatpassword']
-        db.update({db:[username,emailadress,password,repeatpassword]}) 
+        db.update({username:{"name": name,"emailadress":emailadress,"password":password,"repeatpassword":repeatPassword}}) 
         session['db']=db
         print ("your username a is '" + username + "'")
 
@@ -48,6 +49,7 @@ def db():
        
 @app.route("/comment")
 def user_comment():
+    comments.append(comment)
     if request.form['username'] in db:
         session['username']=request.form['username']    
         return render_template('index.html')
